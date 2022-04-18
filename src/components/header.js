@@ -1,32 +1,26 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-const Header = ({ siteTitle }) => (
+const Header = ({siteTitle}) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `white`,
       marginBottom: `1.45rem`,
     }}
   >
-    <div
+       <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+       <a href="https://educative.io">  
+       <StaticImage src = "../images/Educative.png" style= {{margin: '0 auto',maxWidth:200, 
+        background:`white`}}>
+       </StaticImage>
+  </a>
     </div>
   </header>
 )
