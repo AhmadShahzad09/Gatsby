@@ -546,6 +546,23 @@ card:hover {
 container {
   padding: 2px 16px;
 }
+.theme-twitter {
+  --color-bg-primary: #15202B;
+  --color-bg-primary-light: #172D3F;
+  --color-bg-accent: #1B91DA; 
+  --color-bg-accent-light: #1B91DA; 
+  --color-bg-secondary: #657786;
+  --color-text-link: #1B91DA;    
+  --color-bg-compliment: #112b48;
+  --color-bg-default: #192734;
+  --color-bg-inverse: #1B91DA;
+  --color-text-primary: #fff;
+  --color-text-secondary: #f2f2f2;
+  --color-text-default: #e9e9e9;
+  --color-text-default-soft: #6a6a6a;
+  --color-text-inverse: #1B91DA;
+  --color-text-inverse-soft: #1B91DA;
+}
 abbr {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;

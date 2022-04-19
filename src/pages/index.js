@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { node } from "prop-types"
 import { Card, Container , Image , Button, Row, Col} from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const Index = ({data}) => {
  const courses = data.allCoursesJson.edges // array
@@ -16,24 +15,6 @@ console.log(courses)
                 {courses.length > 0 ? courses.map((node, i) => {
                   console.log(node)
                     return (
-                        // <div key={i} >
-                        //     <div text-align = "right" width = "70%">
-                        //     <img src = {node.node.img} class="w3-round" alt="Norway" width = "30%"></img>
-                        //     <a href= {node.node.url}>{node.node.title}</a>
-                        //     <p> -{node.node.author}</p>
-                        //     <p>{node.node.overview}</p>
-                        //     <p>{node.node.free}</p>
-                        //     </div>
-                        //   </div>
-                        //<div class="w3-white w3-hover-shadow w3-center">
-                        //  <Container>
-                        //     <Card>
-                        //       <Card.Img src = {node.node.img} align = "center" width = "30%"></Card.Img>
-                        //       <a href= {node.node.url} align = "center" width = "70%">{node.node.title}</a>
-                        //       <Card.Text align = "center" width = "70%">{node.node.overview}</Card.Text>
-                              
-                        //     </Card>
-                        //   </Container>
                         <Card className="mt-1">
                         <Row>
                         <Col xs={4} className={"m-2 me-2"}>
