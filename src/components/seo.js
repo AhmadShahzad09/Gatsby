@@ -53,19 +53,19 @@ function Seo({ description, lang, meta, title }) {
           content: `website`,
         },
         {
-          name: `twitter:card`,
+          name: `card`,
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
+          name: `creator`,
           content: site.siteMetadata?.author || ``,
         },
         {
-          name: `twitter:title`,
+          name: `title`,
           content: title,
         },
         {
-          name: `twitter:description`,
+          name: `description`,
           content: metaDescription,
         },
       ].concat(meta)}

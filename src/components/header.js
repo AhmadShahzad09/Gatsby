@@ -6,18 +6,19 @@ const Header = ({siteTitle}) => (
   <header
     style={{
       background: `white`,
-      marginBottom: `1.45rem`,
+      marginBottom: `1.45 rem`,
     }}
   >
        <div
       style={{
+
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-       <a href="https://educative.io">  
-       <StaticImage src = "../images/Educative.png" style= {{margin: '0 auto',maxWidth:200, 
+       <a href="https://gatsbyjs.com">  
+       <StaticImage src = "../images/gatsby-icon.png" style= {{float: "left", margin: '0 auto',maxWidth:50, 
         background:`white`}}>
        </StaticImage>
   </a>
