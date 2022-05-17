@@ -3,9 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { node } from "prop-types"
 import { Link } from "gatsby"
-import { Card, Container , Image , Button, Row, Col} from "react-bootstrap"
-import { StaticImage } from "gatsby-plugin-image"
-import Header from "../components/header"
+import { Card , Image , Button, Row, Col} from "react-bootstrap"
 
 
 const Index = ({data}) => {
@@ -14,7 +12,20 @@ const Index = ({data}) => {
 console.log(courses)
   return( 
   //<pre>{JSON.stringify(data, null, 4)}</pre>
-  <Layout >
+  <Layout className="theme-my-light">
+      {/* <div style={{align:"centre", marginLeft:"35%"} }>
+      <h1>
+                    E Library
+                  </h1>
+      
+      </div> */}
+      <div style={{float:'right', marginTop: "0"}}>
+                    <button style={{marginBottom:"15%"}} className="btn-primary">
+                  <Link to="/index-dark">Switch Theme</Link>
+                </button>
+    </div>
+    <br>
+    </br>
             <div className="index">
                 <h1 className="index-title">{node}</h1>
                 {courses.length > 0 ? courses.map((node, i) => {
@@ -53,11 +64,6 @@ console.log(courses)
                     
                     )
                   }): "Loading"}
-            </div>
-            <div>
-              <a href className="button-text-light">
-                 <Link to="/index-dark">Switch Theme</Link>
-              </a>
             </div>
             </Layout>
             )

@@ -3,16 +3,20 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { node } from "prop-types"
 import { Link } from "gatsby"
-import { Card, Container , Image , Button, Row, Col} from "react-bootstrap"
+import { Card, Image , Button, Row, Col} from "react-bootstrap"
 
 
 const Index = ({data}) => {
- const courses = data.allCoursesJson.edges // array
-
-console.log(courses)
+ const courses = data.allCoursesJson.edges 
   return( 
-  //<pre>{JSON.stringify(data, null, 4)}</pre>
   <Layout >
+        <div>
+                  <a href className="button-text-dark">
+                 <Link to="/">Switch Theme</Link>
+              </a>
+        </div>
+        <br>
+        </br>
             <div className="index">
                 <h1 className="index-title">{node}</h1>
                 {courses.length > 0 ? courses.map((node, i) => {
