@@ -5,10 +5,10 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
-  plugins: [
+ plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-transformer-json`,
+    //Task:2 - add gatsby transformer json plugin here
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `data`,
         path: `${__dirname}/src/data`,
       },
     },

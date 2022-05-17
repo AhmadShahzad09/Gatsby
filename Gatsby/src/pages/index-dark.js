@@ -1,0 +1,1 @@
+//Task:7 - Write code for index-dark.js here
